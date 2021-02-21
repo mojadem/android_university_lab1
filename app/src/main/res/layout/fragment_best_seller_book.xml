@@ -5,23 +5,32 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/ranking"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/book_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="20dp"
+            tools:text="1" />
+
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:srcCompat="@tools:sample/avatars" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold"
         tools:text="Harry Potter" />
 
     <TextView
@@ -37,13 +46,14 @@
         android:layout_height="wrap_content"
         android:lines="5"
         android:ellipsize="end"
-        android:textAppearance="?attr/textAppearanceListItem"
         tools:text="Harry Potter is a series of seven fantasy novels written by British author, J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles(non-magical peo…" />
 
     <Button
         android:id="@+id/buy_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4d6f99"
+        android:textColor="#ffffff"
         android:text="BUY ON AMAZON"/>
 
 </LinearLayout>
